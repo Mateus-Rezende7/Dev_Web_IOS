@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Aula 07</title>
+</head>
+  <body>
+      <header>
+        <nav>
+          <h2> Elementos de formulário</h2>
+           <ul>
+             <li><a href="">input e label</a></li>
+             <li><a href="">checkbox e radio</a></li>
+             <li><a href="">select e datalist</a></li>
+             <li><a href="">textarea</a></li>
+             <li><a href="">fieldset e legend</a></li>
+             <li><a href="">Atributo action do elemento form e elemento output</a></li>
+           </ul> 
+        </nav>
+
+        </header>
+         
+        <main>
+            <fieldset>
+               <legend><h2>texto poetico</h2></legend>
+            <p>Esto aprendendo HTML atualmente e estou gostando bastante, no momento não estou tendo dificuldades</p>
+
+            <form method="post" action="mateusrezendedeoliveira@gmail.com"
+             name="Churrasco">
+               <label= for="cTipocarne">Tipos de carne</label>
+               
+               <input maxlenght="5" required="requeired" id="cTipocarne" type="text" size="50" name="Informação sobre churrasco">
+               
+                <input>
+                
+              </fieldset>
+  
+           <!--Radio-->
+          <p>Qual sua cor preferida</p>
+            
+            <input type="radio" id="I" name="cor">
+            <label for="I">Amarelo</label>
+            
+            <input type="radio" id="c" name="cor">
+             <label for="C">Azul</label>
+  
+             <!--Checkbox-->
+             
+             <p>Quais cidades você ja visitou</p>
+            <input type="Checkbox" id="Cidade1"
+            name="Cidade1" value="São paulo">
+            <label for="São paulo">São paulo</label>
+  
+            <input type="Checkbox" id="Cidade2"
+            name="Cidade2" value="Belo Horizonte">
+            <label for="Belo Horizonte">Belo Horizonte</label>
+  
+            <input type="Checkbox" id="Cidade3"
+            name="Moeda" value="Moeda">
+            <label for="Moeda">Moeda</label>
+  
+            <!--Select lista suspensa-->
+              <label for="melhorTime">Qual o molher time</label>
+              <select name="Time" id="Melhortime">
+                 <option value="">Palmeiras</option>
+                 <options value="">São Paulo</options>
+                 <options value="">Corinthias</options>
+                 <options value="">Santos</options>
+                </select>
+                   <br>
+                   <br>
+                                  
+            <!-- tipo rangem-->
+             0 
+            <input type="range" list="valor_01" min="1" max="10" name="" id="">
+            100 
+            <datalist id="valor_01">
+              <optiom value="1"></optiom>
+              <optiom value="2"></optiom>
+              <optiom value="3"></optiom>
+              <optiom value="4"></optiom>
+              <optiom value="5"></optiom>
+              <optiom value="6"></optiom>
+              <optiom value="7"></optiom>
+              <optiom value="8"></optiom>
+              <optiom value="9"></optiom>
+              <optiom value="10"></optiom>
+
+  
+            </datalist>
+  
+  
+  
+                      <br>
+                      <br>
+                      
+          <!-- text area-->
+            <textarea name="" id="" cols="30" rows="10" placeholder="TEXTO
+            "></textarea>
+               <br>
+               <br>
+             <input type="submit" value="manda">
+            <!-- tudo dentro da main e dps o <form>-->
+            </form>
+      
+      </main>
+
+
+
+
+
+
+  </body>
+</html>
