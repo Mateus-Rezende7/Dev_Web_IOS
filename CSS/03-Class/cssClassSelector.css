@@ -1,0 +1,39 @@
+@charset "utf-8"
+
+header { background-color: rgb(31, 68, 138);
+         line-height: 150%;
+         text-align: center;
+         
+    color: #e6e6fa;
+    font-family: Georgia, "Times New Roman", serif;   
+    
+
+}
+
+h1 {font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(202, 217, 245);
+    text-align: center;
+}
+ ol { 
+     font-weight: bold;
+     font-style: Impact;
+     text-align: center;
+     display: inline-block;
+     text-shadow: 3px 3px 5px #cf2e2e;
+    }
+
+ .cor-texto {
+     color:blueviolet
+    
+ }
+
+  footer {
+
+    font-family: 'Palette Mosaic', cursive;
+    text-shadow: 3px 3px 5px rgb(91, 224, 57);
+
+  }
