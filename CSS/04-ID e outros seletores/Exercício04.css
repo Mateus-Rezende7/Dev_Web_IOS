@@ -1,0 +1,46 @@
+@charset "utf-8" ;
+
+*{
+    text-align: center;
+    line-height: 150%;
+    margin:5cm;
+}
+body {
+    background-color: rgb(143, 182, 233);
+}
+header {
+    line-height: ;
+    font-weight: 800px;
+}
+   
+.Lista0{
+     font-weight: 800;
+}
+
+.Lista01{
+    font-family: 'Palette Mosaic', cursive;
+    color:rgb(24, 192, 221);
+    background-color:rgb(50, 0, 233);
+    font-size:25px;
+    
+}
+
+.Lista02{
+    font-family: 'Brush Script MT', Brush Script Std, cursive ;
+    color:rgb(255, 0, 0);
+    background-color: rgb(89, 4, 226);
+    font-size:25px;
+}
+
+.Lista03{
+    font-family: 'Courier New', monospace ;
+    background-color: rgb(0, 0, 0);
+    color:rgb(170, 208, 252);
+    font-size: 25px;
+    
+}
+
+h2 {
+    line-height: 800px
+    font styke: italic;
+}

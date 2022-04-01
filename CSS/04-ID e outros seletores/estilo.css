@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Palette Mosaic';
+    background-color: rgb(4, 140, 231);
+    
+}
+
+.esqueci {
+    color: aqua;
+
+}
+
+#esqueci2 {
+    color: blueviolet;
+}
+
+p#sobrenome {
+    color: darkgreen;
+}
+
+sections p{
+    color: rgb(107, 5, 61);
+    font-size: 23px;
+    background-color: indigo;
+}
