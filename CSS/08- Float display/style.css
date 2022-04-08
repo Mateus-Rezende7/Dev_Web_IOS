@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.img1 {
+    float: right;
+}
+
+.img2 {
+    width: 280px;
+    height: 230px;
+    float: left;
+}
+
+.nome {
+    margin-top: 30%;
+}
+
+.img3 {
+    width: 280px;
+    height: 230px;
+    float: right;
+}
+
+.paragrafo {
+       clear:none;
+}
