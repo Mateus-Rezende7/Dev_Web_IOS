@@ -59,3 +59,7 @@ console.log(string12.lastIndexOf('Aqui'));
 console.log(string12.search('Aqui'))
 //string.starWith()
 console.log(string12.startsWith('S'))
+//string.endsWith
+console.log(string12.endsWith('.'));// false
+console.log(string12.endsWith('i'));
+console.log(string12.endsWith('I'));
