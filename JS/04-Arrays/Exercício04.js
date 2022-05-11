@@ -28,4 +28,6 @@ pessoas[2] = "silvana"
 console.log(pessoas)
 
 var pessoasString = pessoas.join('-')
+console.log('\n')
+console.log('Quando a festa acabou sobrou apenas estas pessoas:')
 console.log(pessoasString)
