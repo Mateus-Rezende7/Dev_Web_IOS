@@ -85,27 +85,24 @@ const alunos= [
     nota: 10,
     altura: 160,
     time:'Palmeiras',
-}
+},
 {
     aluno:'Kendrick Lamar',
     nota:11,
     altura:170,
     time:'Flamengo'
-}
+},
 {
     aluno:'Tyler',
     nota:'4',
     altura:180,
     time:'Botafogo',
-}
+},
 {
     aluno:'Rihanna',
     nota:'2',
     altura:'190',
     time:'Santos'
-}
-]
-
-let filtroAlunos = aluno.filter((alunos.aluno)) =>{
-    alunos.forEach
-}
+},
+];
+   
