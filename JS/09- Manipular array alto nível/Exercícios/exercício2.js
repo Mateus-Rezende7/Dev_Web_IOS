@@ -50,12 +50,10 @@ segundoAno = alunos.filter( ( aluno ) => aluno.ano.includes( "2" ) );
 
 console.log( segundoAno );
 
-if (media < 7 )
-{
-console.log("O aluno não esta na media");
+calc = (alunos[0].nota + alunos[1].nota + alunos[2].nota + alunos[3].nota + alunos[4].nota + alunos[5].nota) / 6
+if (calc >= 7){
+    console.log('Os alunos estão acima da média')
 }
-else 
-{
-console.log("O aluno esta na media");
+else{
+    console.log('Os alunos estão abaixo da média')
 }
-console.log( media );
