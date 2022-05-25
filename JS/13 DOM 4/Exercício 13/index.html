@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="stylee.css" />
+    <title>Exercício 13 DOM</title>
+</head>
+
+<body>
+    <header>
+        <h1><em>Dados dos clientes</em></h1>
+    </header>
+    <section class="container">
+        <form id="my-form">
+            <h1><em>Adicionar Usuário</em></h1>
+            <div class="msg"></div>
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required />
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" required />
+            </div>
+            <div class="msg_email"></div>
+            <div>
+                <label for="date">Data de nascimento</label>
+                <input name="date" id="date" required>
+                    
+                </select>
+            </div>
+            <input class="btn" type="submit" value="Enviar" />
+            <input class="btn" type="submit" value="Excluir" />
+        </form>
+        <ul id="users"></ul>
+    </section>
+    <script src="mainn.js"></script>
+</body>
+
+</html>
