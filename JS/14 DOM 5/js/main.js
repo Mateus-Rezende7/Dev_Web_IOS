@@ -41,7 +41,7 @@ function removeItem(e) {
     }
 
     // Função buscarItems
-function buscarItems(e) {
+function buscarItems(e) {}
     // Converte o texto digitado para minúsculo
     let text = e.target.value.toLowerCase();
     // Busca todos os itens
@@ -57,4 +57,3 @@ function buscarItems(e) {
     item.style.display = 'none'; // oculta o item
     }
     });
-    }
