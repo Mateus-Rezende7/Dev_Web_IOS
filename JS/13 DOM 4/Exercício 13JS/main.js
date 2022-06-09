@@ -75,4 +75,4 @@ function removerElemento() {
         lista[i].remove();
     }  
     document.body.style.backgroundColor='white'
-}
+} 

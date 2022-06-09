@@ -1,0 +1,117 @@
+//getElementById //variaveis
+const form = document.getElementById('addForm');
+const itemList = document.getElementById('items');
+const decrease = document.getElementsByClassName('decrease');
+const lista = document.getElementById('items');
+const carrinho = document.getElementById('compra');
+const div1 = document.getElementsByClassName('total');
+const end = document.getElementById('fim');
+const prices = [];
+let finaltotal = document.getElementById('valor-total');
+
+//funções
+
+form.addEventListener('submit', addItem);
+
+function addItem(e) {
+    e.preventDefault();
+    let newItemText = document.getElementById('item').value;
+    let newItemvalue = document.getElementById('acervo').value;
+    let newItemqntd = document.getElementById('valor').value;
+    let valor = newItemvalue * newItemqntd;
+    let trash = -valor;
+    total(valor);
+    if (newItemvalue >= 1 && 100 > newItemqntd >= 1) {
+        let li = document.createElement('li');
+        li.className = 'list-group-item';
+        let text = document.createTextNode(
+            `Item: ${newItemText} Valor Unitário:R$${newItemvalue},00`
+        );
+        li.appendChild(text);
+        let deleteBtn = document.createElement('button');
+        deleteBtn.className = 'btn btn-danger btn- float-end btns delete';
+        deleteBtn.appendChild(document.createTextNode('x'));
+        li.appendChild(deleteBtn);
+        let addBtn = document.createElement('button');
+        addBtn.className = 'btn btn-success btn-sm float-end btns add';
+        addBtn.appendChild(document.createTextNode('+'));
+        li.appendChild(addBtn);
+        let decreaseBtn = document.createElement('button');
+        decreaseBtn.className =
+            'btn btn-success btn-sm  float-end btns decrease';
+        decreaseBtn.appendChild(document.createTextNode('-'));
+        li.appendChild(decreaseBtn);
+        items.appendChild(li);
+        let li2 = document.createElement('li');
+        li2.className = 'list-group-item';
+        li2.appendChild(
+            document.createTextNode(
+                `${newItemqntd}x ${newItemText} Valor: R$${
+                    newItemvalue * newItemqntd
+                },00 `
+            )
+        );
+       
+        carrinho.appendChild(li2);
+        deleteBtn.addEventListener('click', excluir);
+       
+        function excluir() {
+            li.remove();
+            li2.remove();
+            total(trash);
+        }
+        
+        addBtn.addEventListener('click', increase);
+        
+        function increase() {
+            if (newItemqntd <= 100) {
+                let inc = newItemqntd++;
+                let newValueplus = newItemvalue * inc;
+                let newValue = +newItemvalue;
+                li2.innerHTML = `${inc + 1}x ${newItemText} Valor: R$${
+                    newValueplus + newValue
+                },00`;
+                trash = -newValueplus - newItemvalue;
+                total(newValue);
+            }
+        }
+        
+        decreaseBtn.addEventListener('click', decrease);
+        
+        function decrease() {
+            if (newItemqntd >= 1) {
+                let dec = newItemqntd--;
+                let newValue = newItemvalue * dec;
+                li2.innerHTML = `${
+                    dec - 1
+                }x ${newItemText} Valor: R$${(newValue -= newItemvalue)},00`;
+                let novoValor = -newItemvalue;
+                trash = -newValue;
+                total(novoValor);
+            }
+        }
+//alertas
+    } else if (newItemqntd > 100) {
+        alert('Seu acervo deve ser menor que 100');
+    } else if (newItemqntd <= 0 || newItemvalue <= 0) {
+        alert('Sua quantidade deve ser maior que 0');
+    } else {
+        alert('Apenas numeros');
+    }
+    form.reset();
+}
+
+//total
+function total(i) {
+    let itemprice = parseInt(i);
+    prices.push(itemprice);
+    let total = 0;
+    if (prices.length <= 1) {
+        total = itemprice;
+    } else {
+        for (let i = 0; i < prices.length; i++) {
+            total += prices[i];
+        }
+    }
+    finaltotal.innerHTML = `R$${total},00`;
+}
